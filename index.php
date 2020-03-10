@@ -1,5 +1,5 @@
 <?php
-    $servername = "it330phpserver.mysql.database.com";
+    $servername = "it330phpserver.mysql.database.azure.com";
     $username = "MohayraQuibo@it330phpserver";
     $password = "kalasahantakaw_0926";
     $dbname = "it330db";
@@ -17,7 +17,7 @@
     if (mysqli_num_rows($result) > 0) {
         // output data of each row
         while($row = mysqli_fetch_assoc($result)) {
-            echo "id: " . $row["id"]. " - Product: " . $row["description"]. " -count: " . $row["count"]. "<br>";
+            echo "id: " . $row["id"]. " - Product: " . $row["description"]. " -Count: " . $row["count"]. "<br>";
         }
     } else {
         echo "0 results";
